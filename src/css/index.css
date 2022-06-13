@@ -53,6 +53,18 @@
   font-family: "Playfair Display", serif;
 }
 
+.pointer {
+  width: 50px !important;
+  height: 50px;
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  background-color: red;
+  opacity: 0.5;
+  -webkit-backdrop-filter: blur(102px);
+          backdrop-filter: blur(102px);
+}
+
 #sml {
   font-size: 0.7em;
 }
@@ -111,9 +123,6 @@ a:hover {
 .card .top h2 {
   max-width: 20ch;
 }
-.card .top:hover ~ .card-content {
-  transform: translateY(0%);
-}
 .card .card-content {
   width: 100%;
   max-width: 30ch;
@@ -151,6 +160,10 @@ a:hover {
     display: flex !important;
   }
   .header .bottom .links {
-    display: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1em;
   }
 }/*# sourceMappingURL=index.css.map */
